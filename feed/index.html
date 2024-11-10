@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Social Feed</title>
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Header -->
+  <div class="container mx-auto p-4">
+    <h1 class="text-2xl font-semibold text-center mb-4">RiffPit</h1>
+    
+    <!-- Search and Sort Options -->
+    <div class="flex flex-col md:flex-row items-center justify-between mb-4 space-y-2 md:space-y-0">
+      <!-- Search Bar -->
+      <div class="relative w-full md:w-1/3">
+        <input type="text" placeholder="Search posts..." class="w-full bg-gray-800 border border-gray-700 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-gray-600 text-gray-200 placeholder-gray-400">
+        <svg class="absolute left-3 top-3 h-5 w-5 text-gray-400" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2a8 8 0 106.32 13.9l5.38 5.39 1.42-1.42-5.39-5.38A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"/></svg>
+      </div>
+
+      <!-- Sort Dropdown -->
+      <div class="relative w-full md:w-auto">
+        <select class="w-full md:w-36 bg-gray-800 border border-gray-700 rounded-full py-2 px-3 text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-600">
+          <option value="recent">Most Recent</option>
+          <option value="popular">Most Popular</option>
+          <option value="recommended">Recommended</option>
+        </select>
+      </div>
+  </div>
+
+    <!-- Social Feed Grid -->
+    <div class="container mx-auto p-4">
+        <h3 class="text-xl font-semibold mb-4">Posts</h3>
+        <div class="grid grid-cols-3 gap-2 sm:gap-4">
+          <!-- Thumbnail Post -->
+          <div class="aspect-w-1 aspect-h-1">
+            <img src="/imges/koen-meyssen-ZwfjFMpbohg-unsplash(1).jpg" alt="Post Thumbnail" class="object-cover w-full h-full rounded-lg">
+          </div>
+          <div class="aspect-w-1 aspect-h-1">
+            <img src="/imges/israel-caballero-lMjY5daHEs4-unsplash.jpg" alt="Post Thumbnail" class="object-cover w-full h-full rounded-lg">
+          </div>
+          <div class="aspect-w-1 aspect-h-1">
+            <img src="/imges/maxim-hopman-52Kf36w124Y-unsplash.jpg" alt="Post Thumbnail" class="object-cover w-full h-full rounded-lg">
+          </div>
+          <div class="aspect-w-1 aspect-h-1">
+            <img src="/imges/james-jeremy-beckers-UvMUdyGXNd8-unsplash.jpg" alt="Post Thumbnail" class="object-cover w-full h-full rounded-lg">
+          </div>
+          <div class="aspect-w-1 aspect-h-1">
+            <img src="/imges/freestocks-p_jg3JF68SQ-unsplash.jpg" alt="Post Thumbnail" class="object-cover w-full h-full rounded-lg">
+          </div>
+          <div class="aspect-w-1 aspect-h-1">
+            <img src="/imges/joshua-olsen-w75qzmSWDSU-unsplash.jpg" alt="Post Thumbnail" class="object-cover w-full h-full rounded-lg">
+          </div>
+      </div>
+    </div>
+    <footer class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700">
+        <div class="flex justify-around p-2">
+          <!-- Home Icon -->
+          <a href="/feed/index.html" title="feed">
+            <button class="text-gray-400 hover:text-gray-200 focus:outline-none">
+              <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 3l10 9h-4v8h-12v-8h-4l10-9zM11 18h2v-5h-2v5z"/>
+              </svg>
+            </button>
+          </a>
+          <!-- Search Icon -->
+          <button class="text-gray-400 hover:text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2a8 8 0 106.32 13.9l5.38 5.39 1.42-1.42-5.39-5.38A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"/></svg>
+          </button>
+          <!-- Add Post Icon -->
+          <button class="text-gray-400 hover:text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 11h-6v-6h-2v6h-6v2h6v6h2v-6h6v-2z"/></svg>
+          </button>
+          <!-- Notifications Icon -->
+          <button class="text-gray-400 hover:text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a6 6 0 00-6 6v5.586l-2.293 2.293 1.414 1.414L7 15.414V18h10v-2.586l1.879 1.879 1.414-1.414L18 13.586V8a6 6 0 00-6-6zm-1 18h2v-2h-2v2z"/></svg>
+          </button>
+          <!-- Profile Icon -->
+          <a href="/profile/index.html" title="feed">
+            <button class="text-gray-400 hover:text-gray-200 focus:outline-none">
+                <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z"/>
+                </svg>
+            </button>
+          </a>
+        </div>
+      </footer>
+</body>
+</html>
