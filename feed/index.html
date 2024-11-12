@@ -10,8 +10,10 @@
 
   <!-- Header -->
   <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-semibold text-center mb-4">RiffPit</h1>
-    
+    <div class="flex flex-col items-center text-center md:text-center md:space-x-4 mb-6">
+    <img src="/images/IMG_080446_.jpeg" alt="Profile Image" class="rounded-full w-20 h-20 md:w-24 md:h-24">
+    <p class="text-center text-gray-500 text-lg mt-1 mb-3"> Rock Together, Share The Sound!</p>
+    </div>
     <!-- Search and Sort Options -->
     <div class="flex flex-col md:flex-row items-center justify-between mb-4 space-y-2 md:space-y-0">
       <!-- Search Bar -->
@@ -29,6 +31,40 @@
         </select>
       </div>
   </div>
+
+    <!-- contribule -->
+    <header class="container mx-auto p-4">
+      <h3 class="text-xl font-semibold text-gray-100">Make Some Noise</h3>
+    </header>
+  
+    <!-- New Post Form -->
+    <div class="container mx-auto p-4 bg-gray-800 rounded-lg shadow-md mb-6">
+      <h3 class="text-xl font-semibold mb-4">Create a New Post</h3>
+      <form action="#" method="POST" enctype="multipart/form-data" class="space-y-4">
+        <!-- Post Title -->
+        <div>
+          <label for="title" class="block text-sm font-medium text-gray-300">Post Title</label>
+          <input type="text" id="title" name="title" required class="w-full px-3 py-2 bg-gray-700 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600" placeholder="Enter post title">
+        </div>
+  
+        <!-- Image Upload -->
+        <div>
+          <label for="image" class="block text-sm font-medium text-gray-300">Upload Image</label>
+          <input type="file" id="image" name="image" accept="image/*" required class="w-full px-3 py-2 bg-gray-700 text-gray-100 rounded-lg focus:outline-none">
+        </div>
+  
+        <!-- Description -->
+        <div>
+          <label for="description" class="block text-sm font-medium text-gray-300">Description</label>
+          <textarea id="description" name="description" rows="4" required class="w-full px-3 py-2 bg-gray-700 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600" placeholder="Enter post description"></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none">
+          Submit Post
+        </button>
+      </form>
+    </div>
 
     <!-- Social Feed Grid -->
     <div class="container mx-auto p-4">
@@ -55,6 +91,7 @@
           </div>
       </div>
     </div>
+    <div class="h-20"></div>
     <footer class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700">
         <div class="flex justify-around p-2">
           <!-- Home Icon -->
