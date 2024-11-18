@@ -9,7 +9,6 @@
   <link rel="icon" type="image/jpeg" href="/images/riffpit.jpeg">
 </head>
 <body class="bg-gray-900 text-gray-100">
-
   <!-- Mobile Header -->
   <header class="lg:hidden">
     <a href="../feed/index.html">
@@ -33,7 +32,6 @@
       <a href="/profile/index.html" class="text-gray-300 hover:text-white transition">Profile</a>
     </nav>
   </header>
-
   <div class="container mx-auto p-4">
     <div class="flex flex-col md:flex-row items-center justify-between mb-4 space-y-2 md:space-y-0">
       <div class="relative w-full md:w-1/3">
@@ -69,33 +67,50 @@
       </button>        
     </form>
   </div>
-
   <div class="container mx-auto p-4">
     <h3 class="text-xl font-semibold mb-4">Posts</h3>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-4">
-      <div class="aspect-w-1 aspect-h-1 overflow-hidden group rounded-lg">
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden group relative rounded-lg">
         <img src="/images/crowd.jpg" alt="concert crowd" 
              class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <p class="text-white text-sm md:text-base font-semibold">Crowd in Club666 </p>
+        </div>
       </div>
-      <div class="aspect-w-1 aspect-h-1 overflow-hidden group rounded-lg">
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden group relative rounded-lg">
         <img src="/images/tattoo.jpg" alt="tattooing" 
              class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <p class="text-white text-sm md:text-base font-semibold">The story goes on...</p>
+        </div>
       </div>
-      <div class="aspect-w-1 aspect-h-1 overflow-hidden group rounded-lg">
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden group relative rounded-lg">
         <img src="/images/amplifier.jpg" alt="amplifier" 
              class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <p class="text-white text-sm md:text-base font-semibold">Fender Hotrod Deluxe lll</p>
+        </div>
       </div>
-      <div class="aspect-w-1 aspect-h-1 overflow-hidden group rounded-lg">
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden group relative rounded-lg">
         <img src="/images/concert.jpg" alt="band on stage" 
              class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <p class="text-white text-sm md:text-base font-semibold">The Dropkick Murphys concert review</p>
+        </div>
       </div>
-      <div class="aspect-w-1 aspect-h-1 overflow-hidden group rounded-lg">
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden group relative rounded-lg">
         <img src="/images/guitar.jpg" alt="electric guitar Fender" 
              class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <p class="text-white text-sm md:text-base font-semibold">Fender-love</p>
+        </div>
       </div>
-      <div class="aspect-w-1 aspect-h-1 overflow-hidden group rounded-lg">
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden group relative rounded-lg">
         <img src="/images/records.jpg" alt="vinyl records" 
              class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <p class="text-white text-sm md:text-base font-semibold">Best vintage vinyl store</p>
+        </div>
       </div>
     </div>
   </div>
