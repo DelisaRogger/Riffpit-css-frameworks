@@ -1234,49 +1234,4 @@ video {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-} }
-
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:text-left {
-    text-align: left;
-  }
-
-  .md\:text-center {
-    text-align: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:static {
-    position: static;
-  }
-
-  .lg\:relative {
-    position: relative;
-  }
-
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:flex {
-    display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
