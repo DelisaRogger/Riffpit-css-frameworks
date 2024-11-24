@@ -1,7 +1,7 @@
 {
   "name": "riffpit",
   "version": "1.0.0",
-  "description": "",
+  "description": "a platform to share everything concerning the beautiful rock-lifestyle",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
